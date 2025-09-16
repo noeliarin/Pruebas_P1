@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="calc/src"/>
+	<classpathentry kind="src" path="SumaListasDigitos/.gradle/8.9/dependencies-accessors/4cd3e8c96779b9731c8cbba8f42437fbcdbade7a/sources"/>
+	<classpathentry kind="src" path="SumaListasDigitos/lib/src/main/java"/>
+	<classpathentry kind="src" path="SumaListasDigitos/lib/src/test/java"/>
+	<classpathentry kind="src" path="test.gradle/.gradle/8.9/dependencies-accessors/eef53cde5b13261cb3e36f46d184d07506c07c85/sources"/>
+	<classpathentry kind="src" path="test.gradle/lib/src/main/java"/>
+	<classpathentry kind="src" path="test.gradle/lib/src/test/java"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/lib/build/libs/lib.jar"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/lib/build/tmp/.cache/expanded/zip_cde35f471dab581134460fc9a50e2c59/jacocoagent.jar"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/lib/libs/covered-class-4.3.4.jar"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/lib/libs/covered-class-4.3.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/lib/libs/covered-class-4.3.4-sources.jar"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/lib/libs/randoop-all-4.3.4.jar"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/lib/libs/replacecall-4.3.4.jar"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/lib/libs/replacecall-4.3.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="SumaListasDigitos/lib/libs/replacecall-4.3.4-sources.jar"/>
+	<classpathentry kind="lib" path="test.gradle/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="SumaListasDigitos/.gradle/8.9/dependencies-accessors/4cd3e8c96779b9731c8cbba8f42437fbcdbade7a/classes"/>
+</classpath>

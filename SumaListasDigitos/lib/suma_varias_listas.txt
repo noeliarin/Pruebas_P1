@@ -1,0 +1,6 @@
+# Cada línea tiene una o más listas de dígitos entre corchetes separadas por “;” para sumaVariasListasDeDigitos.
+[9,9,9];[1];[0,0,1,2];[4,9]
+[0];[0];[0]
+[1,2,3];[4,5,6];[7,8,9]
+[9,9];[9,9];[1];[1]
+[5]|[5];[5];[5];[5]

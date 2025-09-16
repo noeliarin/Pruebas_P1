@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DivisionTest" project="calc" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="calc.test.DivisionTest" time="0.0" displayname="DivisionTest" uniqueid="[engine:junit-jupiter]/[class:calc.test.DivisionTest]">
+    <testcase name="testDivide" classname="calc.test.DivisionTest" time="0.0" displayname="testDivide()" uniqueid="[engine:junit-jupiter]/[class:calc.test.DivisionTest]/[method:testDivide()]"/>
+    <testcase name="testGetDivision" classname="calc.test.DivisionTest" time="0.0" displayname="testGetDivision()" uniqueid="[engine:junit-jupiter]/[class:calc.test.DivisionTest]/[method:testGetDivision()]"/>
+  </testsuite>
+</testrun>

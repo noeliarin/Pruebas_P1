@@ -1,0 +1,11 @@
+# Cada línea tiene dos o más listas de dígitos entre corchetes separadas por «;».
+# Solo se utilizan las dos primeras listas de cada línea para sumaDosListasDeDigitos; las listas adicionales (si las hay) se ignoran.
+# Ejemplos:
+[9,9,9];[1]
+[0];[0]
+[1,2,3];[4,5,6]
+[9,9];[9,9]
+[0,0,1,2];[4,9]
+[1,0,0,0];[0]
+[0];[7,3]
+[5];[5]
