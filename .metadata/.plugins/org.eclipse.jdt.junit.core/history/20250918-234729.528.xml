@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><testrun name="ProductoTest" project="calc" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="calc.test.ProductoTest" time="0.009" displayname="ProductoTest" uniqueid="[engine:junit-jupiter]/[class:calc.test.ProductoTest]">
-    <testcase name="testProducto" classname="calc.test.ProductoTest" time="0.008" displayname="testProducto()" uniqueid="[engine:junit-jupiter]/[class:calc.test.ProductoTest]/[method:testProducto()]"/>
+  <testsuite name="calc.test.ProductoTest" time="0.01" displayname="ProductoTest" uniqueid="[engine:junit-jupiter]/[class:calc.test.ProductoTest]">
+    <testcase name="testProducto" classname="calc.test.ProductoTest" time="0.009" displayname="testProducto()" uniqueid="[engine:junit-jupiter]/[class:calc.test.ProductoTest]/[method:testProducto()]"/>
     <testcase name="testMultiplica" classname="calc.test.ProductoTest" time="0.001" displayname="testMultiplica()" uniqueid="[engine:junit-jupiter]/[class:calc.test.ProductoTest]/[method:testMultiplica()]"/>
   </testsuite>
 </testrun>

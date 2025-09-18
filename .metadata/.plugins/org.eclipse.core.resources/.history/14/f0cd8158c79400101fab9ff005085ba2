@@ -1,0 +1,83 @@
+package suma.listas.digitos;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+public class SumaListasDigitosDDTTest {
+
+    // 1️⃣ Leer el fichero y generar casos de prueba
+    static Stream<Arguments> casosSumaDosListas() throws Exception {
+        Path path = Paths.get("src/test/resources/suma_dos_listas.txt"); // ruta al fichero
+        return Files.lines(path)
+                .filter(line -> !line.isBlank() && !line.startsWith("#")) // ignorar comentarios y líneas vacías
+                .map(line -> {
+                    String[] partes = line.split(";");
+                    List<Integer> lista1 = parseLista(partes[0]);
+                    List<Integer> lista2 = parseLista(partes[1]);
+                    return Arguments.of(lista1, lista2);
+                });
+    }
+
+    // 2️⃣ Convertir "[1,2,3]" a List<Integer>
+    static List<Integer> parseLista(String s) {
+        s = s.replaceAll("[\\[\\]\\s]", ""); // quitar corchetes y espacios
+        List<Integer> resultado = new ArrayList<>();
+        if (!s.isEmpty()) {
+            for (String num : s.split(",")) {
+                resultado.add(Integer.parseInt(num));
+            }
+        }
+        return resultado;
+    }
+
+    // 3️⃣ Test parametrizado
+    @ParameterizedTest
+    @MethodSource("casosSumaDosListas")
+    void testSumaDosListas(List<Integer> lista1, List<Integer> lista2) {
+        List<Integer> resultado = SumaListasDigitos.sumaDosListasDeDigitos(lista1, lista2);
+
+        // 🔹 Calcular esperado usando aritmética normal
+        int n1 = listaToInt(lista1);
+        int n2 = listaToInt(lista2);
+        int esperadoInt = n1 + n2;
+        List<Integer> esperado = intToLista(esperadoInt);
+
+        // 🔹 Comparativa para debug
+        System.out.println("Lista1   : " + lista1);
+        System.out.println("Lista2   : " + lista2);
+        System.out.println("Esperado : " + esperado);
+        System.out.println("Resultado: " + resultado);
+
+        assertEquals(esperado, resultado, "La suma no coincide para " + lista1 + " + " + lista2);
+    }
+
+    // Convierte List<Integer> a número entero
+    static int listaToInt(List<Integer> lista) {
+        int res = 0;
+        for (int d : lista) {
+            res = res * 10 + d;
+        }
+        return res;
+    }
+
+    // Convierte número entero a List<Integer>
+    static List<Integer> intToLista(int n) {
+        if (n == 0) return List.of(0);
+        List<Integer> res = new ArrayList<>();
+        while (n > 0) {
+            res.add(0, n % 10); // insertar al inicio
+            n /= 10;
+        }
+        return res;
+    }
+}

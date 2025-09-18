@@ -1,0 +1,81 @@
+package suma.listas.digitos;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+
+public class SumaListasDigitosDDTTest {
+
+    // 1️⃣ Método que lee el fichero y devuelve casos de prueba
+    static Stream<org.junit.jupiter.params.provider.Arguments> casosSumaDosListas() throws Exception {
+        InputStream is = SumaListasDigitosDDTTest.class.getClassLoader()
+                .getResourceAsStream("suma_dos_listas.txt");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+
+        List<org.junit.jupiter.params.provider.Arguments> lista = new ArrayList<>();
+        String linea;
+        while ((linea = reader.readLine()) != null) {
+            linea = linea.trim();
+            if (linea.isEmpty() || linea.startsWith("#")) continue; // saltar comentarios
+
+            String[] partes = linea.split(";");
+            List<Integer> lista1 = parseLista(partes[0]);
+            List<Integer> lista2 = parseLista(partes[1]);
+
+            lista.add(org.junit.jupiter.params.provider.Arguments.of(lista1, lista2));
+        }
+        reader.close();
+        return lista.stream();
+    }
+
+    // 2️⃣ Convierte "[1,2,3]" en List<Integer>
+    static List<Integer> parseLista(String s) {
+        s = s.replaceAll("[\\[\\]\\s]", ""); // quitar corchetes y espacios
+        List<Integer> resultado = new ArrayList<>();
+        if (s.isEmpty()) return resultado;
+
+        for (String num : s.split(",")) {
+            resultado.add(Integer.parseInt(num));
+        }
+        return resultado;
+    }
+
+    // 3️⃣ Test parametrizado
+    @ParameterizedTest
+    @MethodSource("casosSumaDosListas")
+    void testSumaDosListas(List<Integer> lista1, List<Integer> lista2) {
+        List<Integer> resultado = SumaListasDigitos.sumaDosListasDeDigitos(lista1, lista2);
+
+        // 🔹 Calcular el esperado automáticamente
+        BigInteger num1 = toBigInteger(lista1);
+        BigInteger num2 = toBigInteger(lista2);
+        BigInteger esperado = num1.add(num2);
+        BigInteger actual = toBigInteger(resultado);
+
+        // 🔹 Imprimir siempre para ver comparativa
+        System.out.println("-----");
+        System.out.println("Lista1   : " + lista1);
+        System.out.println("Lista2   : " + lista2);
+        System.out.println("Esperado : " + esperado);
+        System.out.println("Resultado: " + actual);
+
+        assertEquals(esperado, actual, 
+            "La suma no coincide para " + lista1 + " + " + lista2);
+    }
+
+    // Convierte una lista de dígitos en BigInteger
+    static BigInteger toBigInteger(List<Integer> lista) {
+        StringBuilder sb = new StringBuilder();
+        for (int d : lista) sb.append(d);
+        return new BigInteger(sb.toString());
+    }
+}
