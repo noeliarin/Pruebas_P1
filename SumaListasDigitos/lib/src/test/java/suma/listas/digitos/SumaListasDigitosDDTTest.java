@@ -38,11 +38,6 @@ public class SumaListasDigitosDDTTest {
 
         List<Integer> esperado = enteroALista(esperadoNum);
 
-        int minLen = Math.max(lista1.size(), lista2.size());
-        if (esperado.size() < minLen) {
-            esperado = ceros(esperado, minLen);
-        }
-
         System.out.println("-----");
         System.out.println("Lista1   : " + lista1);
         System.out.println("Lista2   : " + lista2);
@@ -119,14 +114,5 @@ public class SumaListasDigitosDDTTest {
             n /= 10;
         }
         return lista;
-    }
-
-    static List<Integer> ceros(List<Integer> lista, int targetLen) {
-        int need = targetLen - lista.size();
-        if (need <= 0) return lista;
-        List<Integer> res = new ArrayList<>();
-        for (int i = 0; i < need; i++) res.add(0);
-        res.addAll(lista);
-        return res;
     }
 }

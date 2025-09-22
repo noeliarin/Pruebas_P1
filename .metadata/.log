@@ -2580,3 +2580,1263 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 
 !ENTRY org.eclipse.lsp4e 1 0 2025-09-19 00:38:52.740
 !MESSAGE [Info]	async2    Updated symbol index in 1 ms! (6 symbol(s))
+!SESSION 2025-09-22 18:10:25.040 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-09-22 18:10:34.648
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (914) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY org.eclipse.buildship.core 2 2 2025-09-22 18:44:22.170
+!MESSAGE Launching Gradle tasks failed due to an error in the referenced Gradle build.
+!STACK 0
+org.gradle.tooling.BuildException: Could not execute build using connection to Gradle distribution 'https://services.gradle.org/distributions/gradle-8.9-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ConnectionExceptionTransformer.transform(ConnectionExceptionTransformer.java:53)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:42)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:68)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildLauncher.run(DefaultBuildLauncher.java:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.buildship.core.internal.workspace.ConnectionAwareLauncherProxy.invokeRun(ConnectionAwareLauncherProxy.java:102)
+	at org.eclipse.buildship.core.internal.workspace.ConnectionAwareLauncherProxy.invoke(ConnectionAwareLauncherProxy.java:92)
+	at jdk.proxy18/jdk.proxy18.$Proxy90.run(Unknown Source)
+	at org.eclipse.buildship.core.internal.launch.RunGradleBuildLaunchRequestJob.executeLaunch(RunGradleBuildLaunchRequestJob.java:71)
+	at org.eclipse.buildship.core.internal.launch.RunGradleBuildLaunchRequestJob.executeLaunch(RunGradleBuildLaunchRequestJob.java:40)
+	at org.eclipse.buildship.core.internal.launch.BaseLaunchRequestJob.executeLaunch(BaseLaunchRequestJob.java:68)
+	at org.eclipse.buildship.core.internal.launch.BaseLaunchRequestJob.runInToolingApi(BaseLaunchRequestJob.java:43)
+	at org.eclipse.buildship.core.internal.launch.BaseLaunchRequestJob.runInToolingApi(BaseLaunchRequestJob.java:35)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob$1.runInToolingApi(ToolingApiJob.java:54)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob.run(ToolingApiJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.gradle.internal.exceptions.LocationAwareException: Execution failed for task ':lib:test'.
+	at org.gradle.initialization.exception.DefaultExceptionAnalyser.transform(DefaultExceptionAnalyser.java:97)
+	at org.gradle.initialization.exception.DefaultExceptionAnalyser.collectFailures(DefaultExceptionAnalyser.java:63)
+	at org.gradle.initialization.exception.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:55)
+	at org.gradle.initialization.exception.StackTraceSanitizingExceptionAnalyser.transform(StackTraceSanitizingExceptionAnalyser.java:39)
+	at org.gradle.internal.buildtree.DefaultBuildTreeFinishExecutor.finishBuildTree(DefaultBuildTreeFinishExecutor.java:56)
+	at org.gradle.composite.internal.OperationFiringBuildTreeFinishExecutor$1.call(OperationFiringBuildTreeFinishExecutor.java:46)
+	at org.gradle.composite.internal.OperationFiringBuildTreeFinishExecutor$1.call(OperationFiringBuildTreeFinishExecutor.java:42)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.composite.internal.OperationFiringBuildTreeFinishExecutor.finishBuildTree(OperationFiringBuildTreeFinishExecutor.java:42)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$runBuild$4(DefaultBuildTreeLifecycleController.java:125)
+	at org.gradle.internal.model.StateTransitionController.lambda$transition$6(StateTransitionController.java:169)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$transition$7(StateTransitionController.java:169)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.transition(StateTransitionController.java:169)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.runBuild(DefaultBuildTreeLifecycleController.java:117)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:77)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:72)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:53)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.internal.buildtree.ProblemReportingBuildActionRunner.run(ProblemReportingBuildActionRunner.java:49)
+	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:65)
+	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:140)
+	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.lambda$execute$0(RootBuildLifecycleBuildActionExecutor.java:40)
+	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:130)
+	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.execute(RootBuildLifecycleBuildActionExecutor.java:40)
+	at org.gradle.internal.buildtree.InitDeprecationLoggingActionExecutor.execute(InitDeprecationLoggingActionExecutor.java:62)
+	at org.gradle.internal.buildtree.InitProblems.execute(InitProblems.java:36)
+	at org.gradle.internal.buildtree.DefaultBuildTreeContext.execute(DefaultBuildTreeContext.java:40)
+	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.lambda$execute$0(BuildTreeLifecycleBuildActionExecutor.java:71)
+	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:60)
+	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.execute(BuildTreeLifecycleBuildActionExecutor.java:71)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$3.call(RunAsBuildOperationBuildActionExecutor.java:61)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$3.call(RunAsBuildOperationBuildActionExecutor.java:57)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor.execute(RunAsBuildOperationBuildActionExecutor.java:57)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.lambda$execute$0(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:267)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:131)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.execute(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.tooling.internal.provider.continuous.ContinuousBuildActionExecutor.execute(ContinuousBuildActionExecutor.java:110)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecutor.execute(SubscribableBuildActionExecutor.java:64)
+	at org.gradle.internal.session.DefaultBuildSessionContext.execute(DefaultBuildSessionContext.java:46)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:92)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:80)
+	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:71)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:62)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:41)
+	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:64)
+	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:32)
+	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:51)
+	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:39)
+	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:47)
+	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:31)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:70)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.lambda$execute$0(ForwardClientInput.java:40)
+	at org.gradle.internal.daemon.clientinput.ClientInputForwarder.forwardInput(ClientInputForwarder.java:80)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:64)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator.lambda$runCommand$0(DaemonStateCoordinator.java:320)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Caused by: org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':lib:test'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	... 2 more
+Caused by: org.gradle.api.internal.exceptions.MarkedVerificationException: There were failing tests. See the report at: file:///home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib/build/reports/tests/test/index.html
+	at org.gradle.api.tasks.testing.AbstractTestTask.handleTestFailures(AbstractTestTask.java:705)
+	at org.gradle.api.tasks.testing.AbstractTestTask.handleCollectedResults(AbstractTestTask.java:539)
+	at org.gradle.api.tasks.testing.AbstractTestTask.executeTests(AbstractTestTask.java:534)
+	at org.gradle.api.tasks.testing.Test.executeTests(Test.java:715)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:58)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:105)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:54)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	... 28 more
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:07.865
+!MESSAGE [Info]	Last version of Gradle is 9.1.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:07.865
+!MESSAGE [Info]	main      Connected to client
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:07.866
+!MESSAGE [Info]	main      Kotlin Language Server: Version ?
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:07.866
+!MESSAGE [Info]	Default build model has been created
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:07.935
+!MESSAGE [Info]	async0    Adding workspace folder SumaListasDigitos
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:07.962
+!MESSAGE [Info]	async0    Adding .../SumaListasDigitos/settings.gradle.kts, .../lib/build.gradle.kts under /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos to source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:07.967
+!MESSAGE [Info]	async0    Searching for dependencies and Java sources in workspace root /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:07.968
+!MESSAGE [Info]	UPDATE build env /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:07.970
+!MESSAGE [Info]	used distribution https://services.gradle.org/distributions/gradle-8.9-bin.zip
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.328
+!MESSAGE [Info]	[TAPI success=true] workspace=/home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.658
+!MESSAGE [Info]	async0    Update build script path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.659
+!MESSAGE [Info]	async0    Adding 33 files to build script class path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.659
+!MESSAGE [Info]	async0    Reinstantiating compiler
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.751
+!MESSAGE [Info]	async0    Adding workspace folder calc
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.752
+!MESSAGE [Info]	async0    Adding 0 files under /home/noeliafc/Escritorio/eclipse/calc to source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.752
+!MESSAGE [Info]	async0    Searching for dependencies and Java sources in workspace root /home/noeliafc/Escritorio/eclipse/calc
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.752
+!MESSAGE [Info]	UPDATE build env /home/noeliafc/Escritorio/eclipse/calc
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.753
+!MESSAGE [Info]	async0    Update build script path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.753
+!MESSAGE [Info]	async0    Reinstantiating compiler
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.830
+!MESSAGE [Info]	async0    Adding workspace folder lib
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.834
+!MESSAGE [Info]	async0    Adding .../lib/build.gradle.kts under /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib to source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.835
+!MESSAGE [Info]	async0    Searching for dependencies and Java sources in workspace root /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.836
+!MESSAGE [Info]	UPDATE build env /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:14.836
+!MESSAGE [Info]	used distribution https://services.gradle.org/distributions/gradle-8.9-bin.zip
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.174
+!MESSAGE [Info]	[TAPI success=true] workspace=/home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.256
+!MESSAGE [Info]	async0    Update build script path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.256
+!MESSAGE [Info]	async0    Reinstantiating compiler
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.411
+!MESSAGE [Info]	async1    Full semantic tokens in .../lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.414
+!MESSAGE [Info]	client    Adding workspace file:///home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/ to source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.428
+!MESSAGE [Info]	client    Adding .../SumaListasDigitos/settings.gradle.kts, .../lib/build.gradle.kts under /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos to source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.431
+!MESSAGE [Info]	client    Searching for dependencies and Java sources in workspace root /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.431
+!MESSAGE [Info]	UPDATE build env /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.431
+!MESSAGE [Info]	client    Update build script path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.431
+!MESSAGE [Info]	client    Reinstantiating compiler
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.513
+!MESSAGE [Info]	async1    Finished in 101 ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.514
+!MESSAGE [Error]	com.intellij.psi.PsiInvalidElementAccessException: Element: class org.jetbrains.kotlin.psi.KtFile #kotlin  because: project is disposed: com.intellij.mock.MockProject@23de4c8d
+invalidated at: no info
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.515
+!MESSAGE [Error]		at com.intellij.psi.impl.source.PsiFileImpl.getText(PsiFileImpl.java:307)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.515
+!MESSAGE [Error]		at org.javacs.kt.SourcePath$SourceFile.parseIfChanged(SourcePath.kt:77)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.516
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.all(SourcePath.kt:356)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.516
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.all$default(SourcePath.kt:353)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.516
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileFiles$compileAndUpdate(SourcePath.kt:217)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.516
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileFiles(SourcePath.kt:243)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.516
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileAllFiles(SourcePath.kt:259)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.517
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$lintAll$1.invoke(KotlinTextDocumentService.kt:277)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.518
+!MESSAGE [Error]		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.519
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.519
+!MESSAGE [Error]		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.519
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$lintAll$1.invoke(KotlinTextDocumentService.kt:276)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.519
+!MESSAGE [Error]		at org.javacs.kt.util.Debouncer.submitImmediately$lambda$1(Debouncer.kt:27)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.519
+!MESSAGE [Error]		at com.intellij.psi.impl.source.PsiFileImpl.getText(PsiFileImpl.java:307)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.520
+!MESSAGE [Error]	com.intellij.psi.PsiInvalidElementAccessException: Element: class org.jetbrains.kotlin.psi.KtFile #kotlin  because: project is disposed: com.intellij.mock.MockProject@23de4c8d
+invalidated at: no info
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.520
+!MESSAGE [Error]		at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.520
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileFiles(SourcePath.kt:243)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.520
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.520
+!MESSAGE [Error]		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.520
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$lintAll$1.invoke(KotlinTextDocumentService.kt:277)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.520
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileAllFiles(SourcePath.kt:259)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.520
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileFiles$compileAndUpdate(SourcePath.kt:214)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.521
+!MESSAGE [Error]		at org.javacs.kt.SourcePath$SourceFile.parseIfChanged(SourcePath.kt:77)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.521
+!MESSAGE [Error]		at org.javacs.kt.util.Debouncer.submitImmediately$lambda$1(Debouncer.kt:27)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.521
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$lintAll$1.invoke(KotlinTextDocumentService.kt:276)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.521
+!MESSAGE [Error]		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.521
+!MESSAGE [Error]		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.521
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.521
+!MESSAGE [Error]		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.522
+!MESSAGE [Error]		at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.522
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.522
+!MESSAGE [Error]	com.intellij.psi.PsiInvalidElementAccessException: Element: class org.jetbrains.kotlin.psi.KtFile #kotlin  because: project is disposed: com.intellij.mock.MockProject@23de4c8d
+invalidated at: no info
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.522
+!MESSAGE [Error]		at com.intellij.psi.impl.source.PsiFileImpl.getText(PsiFileImpl.java:307)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.523
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileFiles$compileAndUpdate(SourcePath.kt:214)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.523
+!MESSAGE [Error]		at org.javacs.kt.SourcePath$SourceFile.parseIfChanged(SourcePath.kt:77)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.524
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileFiles(SourcePath.kt:243)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.524
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileAllFiles(SourcePath.kt:259)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.524
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.refreshDependencyIndexes(SourcePath.kt:293)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.524
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$lintAll$1.invoke(KotlinTextDocumentService.kt:279)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.524
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$lintAll$1.invoke(KotlinTextDocumentService.kt:276)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.524
+!MESSAGE [Error]		at org.javacs.kt.util.Debouncer.submitImmediately$lambda$1(Debouncer.kt:27)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.524
+!MESSAGE [Error]		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.525
+!MESSAGE [Error]		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.525
+!MESSAGE [Error]		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.525
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.525
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.525
+!MESSAGE [Error]		at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.526
+!MESSAGE [Error]	com.intellij.psi.PsiInvalidElementAccessException: Element: class org.jetbrains.kotlin.psi.KtFile #kotlin  because: project is disposed: com.intellij.mock.MockProject@23de4c8d
+invalidated at: no info
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.527
+!MESSAGE [Error]		at com.intellij.psi.impl.source.PsiFileImpl.getText(PsiFileImpl.java:307)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.527
+!MESSAGE [Error]		at org.javacs.kt.SourcePath$SourceFile.parseIfChanged(SourcePath.kt:77)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.528
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileFiles(SourcePath.kt:243)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.529
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.refreshDependencyIndexes(SourcePath.kt:293)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.529
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$lintAll$1.invoke(KotlinTextDocumentService.kt:279)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.529
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileAllFiles(SourcePath.kt:259)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.529
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.compileFiles$compileAndUpdate(SourcePath.kt:214)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.529
+!MESSAGE [Error]		at org.javacs.kt.util.Debouncer.submitImmediately$lambda$1(Debouncer.kt:27)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.530
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$lintAll$1.invoke(KotlinTextDocumentService.kt:276)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.530
+!MESSAGE [Error]		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.530
+!MESSAGE [Error]		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.530
+!MESSAGE [Error]		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.531
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.531
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.531
+!MESSAGE [Info]	debounce0 Linting .../lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.531
+!MESSAGE [Error]		at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.535
+!MESSAGE [Error]		at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.535
+!MESSAGE [Error]	Caused by: com.intellij.psi.PsiInvalidElementAccessException: Element: class org.jetbrains.kotlin.psi.KtFile #kotlin  because: project is disposed: com.intellij.mock.MockProject@23de4c8d
+invalidated at: no info
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.535
+!MESSAGE [Error]	async1    Internal error: com.intellij.psi.PsiInvalidElementAccessException: Element: class org.jetbrains.kotlin.psi.KtFile #kotlin  because: project is disposed: com.intellij.mock.MockProject@23de4c8d
+invalidated at: no info
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.536
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.536
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.536
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$semanticTokensFull$1.invoke(KotlinTextDocumentService.kt:237)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.536
+!MESSAGE [Error]		at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.536
+!MESSAGE [Error]		... 3 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.536
+!MESSAGE [Error]		at org.javacs.kt.SourcePath.currentVersion(SourcePath.kt:183)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.537
+!MESSAGE [Error]		at org.javacs.kt.SourcePath$SourceFile.compileIfChanged(SourcePath.kt:90)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.537
+!MESSAGE [Error]	java.util.concurrent.CompletionException: com.intellij.psi.PsiInvalidElementAccessException: Element: class org.jetbrains.kotlin.psi.KtFile #kotlin  because: project is disposed: com.intellij.mock.MockProject@23de4c8d
+invalidated at: no info
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.537
+!MESSAGE [Error]		at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.537
+!MESSAGE [Error]		at org.javacs.kt.SourcePath$SourceFile.doCompileIfChanged(SourcePath.kt:110)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.538
+!MESSAGE [Error]		at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.538
+!MESSAGE [Error]		at com.intellij.psi.impl.source.PsiFileImpl.getText(PsiFileImpl.java:307)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.539
+!MESSAGE [Error]		at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.539
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:242)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.lambda$0(AbstractReconciler.java:235)
+	at org.eclipse.core.runtime.jobs.Job$1.run(Job.java:166)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:413)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:15.539
+!MESSAGE [Info]	client    Refreshing source path
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.540
+!MESSAGE [Error]		at org.javacs.kt.util.AsyncExecutor.compute$lambda$2(AsyncExecutor.kt:19)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:03:15.540
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$semanticTokensFull$1.invoke(KotlinTextDocumentService.kt:232)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:18.710
+!MESSAGE [Info]	async2    Updating symbol index...
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:18.798
+!MESSAGE [Info]	async2    Updated symbol index in 42 ms! (1 symbol(s))
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.324
+!MESSAGE [Info]	client    Adding workspace file:///home/noeliafc/Escritorio/eclipse/calc/ to source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.325
+!MESSAGE [Info]	client    Adding 0 files under /home/noeliafc/Escritorio/eclipse/calc to source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.325
+!MESSAGE [Info]	client    Searching for dependencies and Java sources in workspace root /home/noeliafc/Escritorio/eclipse/calc
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.325
+!MESSAGE [Info]	client    Update build script path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.325
+!MESSAGE [Info]	UPDATE build env /home/noeliafc/Escritorio/eclipse/calc
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.326
+!MESSAGE [Info]	client    Reinstantiating compiler
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.360
+!MESSAGE [Info]	async2    Updating symbol index...
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.364
+!MESSAGE [Info]	async2    Updated symbol index in 2 ms! (2 symbol(s))
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.434
+!MESSAGE [Info]	client    Refreshing source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.772
+!MESSAGE [Info]	async2    Updating symbol index...
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:21.778
+!MESSAGE [Info]	async2    Updated symbol index in 1 ms! (3 symbol(s))
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:22.738
+!MESSAGE [Info]	client    Adding workspace file:///home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib/ to source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:22.740
+!MESSAGE [Info]	client    Adding .../lib/build.gradle.kts under /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib to source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:22.741
+!MESSAGE [Info]	client    Searching for dependencies and Java sources in workspace root /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:22.742
+!MESSAGE [Info]	UPDATE build env /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:22.742
+!MESSAGE [Info]	used distribution https://services.gradle.org/distributions/gradle-8.9-bin.zip
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:22.758
+!MESSAGE [Info]	async2    Updating symbol index...
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:22.766
+!MESSAGE [Info]	async2    Updated symbol index in 1 ms! (4 symbol(s))
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:22.948
+!MESSAGE [Info]	[TAPI success=true] workspace=/home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:23.068
+!MESSAGE [Info]	client    Update build script path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:23.069
+!MESSAGE [Info]	client    Reinstantiating compiler
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:23.259
+!MESSAGE [Info]	client    Refreshing source path
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:23.655
+!MESSAGE [Info]	async2    Updating symbol index...
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:23.663
+!MESSAGE [Info]	async2    Updated symbol index in 1 ms! (5 symbol(s))
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:24.742
+!MESSAGE [Info]	async2    Updating symbol index...
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:03:24.749
+!MESSAGE [Info]	async2    Updated symbol index in 1 ms! (6 symbol(s))
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:04:04.771
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 12:8
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:04:04.791
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 7:9-13:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:04:04.823
+!MESSAGE [Info]	async1    Hovering REFERENCE_EXPRESSION
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:04:04.826
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 7:9-13:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:04:04.829
+!MESSAGE [Info]	async1    Finished in 71 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:13.401
+!MESSAGE [Info]	debounce0 Linting .../lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:13.641
+!MESSAGE [Info]	async1    Full semantic tokens in .../lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:13.977
+!MESSAGE [Info]	debounce0 No diagnostics in file:///home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:14.004
+!MESSAGE [Info]	debounce0 Linting .../lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:14.464
+!MESSAGE [Info]	async2    Updating symbol index...
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:14.496
+!MESSAGE [Info]	async2    Updated symbol index in 28 ms! (4 symbol(s))
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:14.553
+!MESSAGE [Info]	async1    Found 220 tokens
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:14.554
+!MESSAGE [Info]	async1    Finished in 913 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:15.328
+!MESSAGE [Info]	debounce0 No diagnostics in file:///home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:15.565
+!MESSAGE [Info]	async1    Full semantic tokens in .../lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:15.590
+!MESSAGE [Info]	async1    Found 645 tokens
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:15.591
+!MESSAGE [Info]	async1    Finished in 25 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:48.328
+!MESSAGE [Info]	updating build environment for file:///home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:48.328
+!MESSAGE [Info]	UPDATE build env /home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:05:48.329
+!MESSAGE [Info]	used distribution https://services.gradle.org/distributions/gradle-8.9-bin.zip
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:02.447
+!MESSAGE [Info]	[TAPI success=true] workspace=/home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:02.597
+!MESSAGE [Info]	debounce0 Linting .../lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:02.597
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 105:1
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:02.597
+!MESSAGE [Info]	debounce0 No diagnostics in file:///home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:02.598
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 104:1-107:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:02.656
+!MESSAGE [Info]	async1    Hovering CALL_EXPRESSION
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:02.656
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 104:1-107:2
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-09-22 19:06:03.535
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:151)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:246)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5884)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1656)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5099)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4540)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-09-22 19:06:04.538
+!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:06.716
+!MESSAGE [Info]	async1    Finished in 4119 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:06.716
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 115:44
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:06.718
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 108:12-116:2
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-09-22 19:06:06.828
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:151)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:246)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5884)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1656)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5099)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4540)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:06.907
+!MESSAGE [Info]	async1    Hovering BLOCK
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:06.908
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 108:12-116:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:07.062
+!MESSAGE [Info]	async1    Finished in 345 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:07.243
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 119:34
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:07.244
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 117:24-125:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:07.449
+!MESSAGE [Info]	async1    Hovering BLOCK
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:07.449
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 117:24-125:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:07.634
+!MESSAGE [Info]	async1    Finished in 391 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:08.294
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 122:43
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:08.296
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 119:13-124:6
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:08.375
+!MESSAGE [Info]	async1    Hovering BLOCK
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:08.375
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 119:13-124:6
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:06:08.464
+!MESSAGE [Info]	async1    Finished in 169 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:36.254
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 119:19
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:36.255
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 117:24-125:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:36.405
+!MESSAGE [Info]	async1    Hovering DOT_QUALIFIED_EXPRESSION
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:36.406
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 117:24-125:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:36.731
+!MESSAGE [Info]	async1    Finished in 480 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:43.986
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 61:6
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:43.988
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 60:1-61:76
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:44.127
+!MESSAGE [Info]	async1    Finished in 141 ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.132
+!MESSAGE [Error]	async1    Internal error: org.javacs.kt.util.KotlinLSException: Error while analyzing: val randoopJar = files("libs/randoop-all-4.3.4.jar") // adjust if different
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.132
+!MESSAGE [Error]		at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.133
+!MESSAGE [Error]	java.util.concurrent.CompletionException: org.javacs.kt.util.KotlinLSException: Error while analyzing: val randoopJar = files("libs/randoop-all-4.3.4.jar") // adjust if different
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.134
+!MESSAGE [Error]		at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.135
+!MESSAGE [Error]		at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.136
+!MESSAGE [Error]	Caused by: org.javacs.kt.util.KotlinLSException: Error while analyzing: val randoopJar = files("libs/randoop-all-4.3.4.jar") // adjust if different
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.137
+!MESSAGE [Error]		at org.javacs.kt.compiler.Compiler.compileKtExpression(Compiler.kt:354)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.137
+!MESSAGE [Error]		at org.javacs.kt.CompiledFile.bindingContextOf(CompiledFile.kt:49)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.138
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.138
+!MESSAGE [Error]		at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.139
+!MESSAGE [Error]		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.139
+!MESSAGE [Error]		at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.140
+!MESSAGE [Error]		at org.javacs.kt.util.AsyncExecutor.compute$lambda$2(AsyncExecutor.kt:19)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.141
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$hover$1.invoke(KotlinTextDocumentService.kt:93)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.142
+!MESSAGE [Error]		at org.javacs.kt.CompiledFile.referenceAtPoint(CompiledFile.kt:72)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.143
+!MESSAGE [Error]		at org.jetbrains.kotlin.types.expressions.ExpressionTypingServices.getTypeInfo(ExpressionTypingServices.java:96)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.143
+!MESSAGE [Error]		at org.javacs.kt.hover.HoversKt.hoverAt(Hovers.kt:26)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.144
+!MESSAGE [Error]		at org.javacs.kt.compiler.Compiler.compileKtExpression(Compiler.kt:343)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.144
+!MESSAGE [Error]		at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorDispatcher.getTypeInfo(ExpressionTypingVisitorDispatcher.java:148)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.145
+!MESSAGE [Error]		at org.jetbrains.kotlin.types.expressions.ExpressionTypingServices.getTypeInfo(ExpressionTypingServices.java:121)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.146
+!MESSAGE [Error]		at org.jetbrains.kotlin.util.PerformanceCounter.time(PerformanceCounter.kt:90)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.146
+!MESSAGE [Error]		at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorDispatcher.getTypeInfo(ExpressionTypingVisitorDispatcher.java:165)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.147
+!MESSAGE [Error]		at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorDispatcher.logOrThrowException(ExpressionTypingVisitorDispatcher.java:261)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.148
+!MESSAGE [Error]		at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorDispatcher.lambda$getTypeInfo$0(ExpressionTypingVisitorDispatcher.java:225)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.148
+!MESSAGE [Error]	Caused by: org.jetbrains.kotlin.util.KotlinFrontEndException: Exception while analyzing expression in (1,1828) in /dummy.virtual.kts
+
+Attachments:
+causeThrowable
+java.lang.ClassCastException: class org.jetbrains.kotlin.resolve.lazy.descriptors.LazyPackageDescriptor cannot be cast to class org.jetbrains.kotlin.descriptors.ScriptDescriptor (org.jetbrains.kotlin.resolve.lazy.descriptors.LazyPackageDescriptor and org.jetbrains.kotlin.descriptors.ScriptDescriptor are in unnamed module of loader 'app')
+	at org.jetbrains.kotlin.resolve.LocalVariableResolver.resolveLocalVariableDescriptor(LocalVariableResolver.kt:188)
+	at org.jetbrains.kotlin.resolve.LocalVariableResolver.process(LocalVariableResolver.kt:80)
+	at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorForStatements.visitProperty(ExpressionTypingVisitorForStatements.java:120)
+	at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorForStatements.visitProperty(ExpressionTypingVisitorForStatements.java:71)
+	at org.jetbrains.kotlin.psi.KtProperty.accept(KtProperty.java:58)
+	at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorDispatcher.lambda$getTypeInfo$0(ExpressionTypingVisitorDispatcher.java:176)
+	at org.jetbrains.kotlin.util.PerformanceCounter.time(PerformanceCounter.kt:90)
+	at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorDispatcher.getTypeInfo(ExpressionTypingVisitorDispatcher.java:165)
+	at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorDispatcher.getTypeInfo(ExpressionTypingVisitorDispatcher.java:148)
+	at org.jetbrains.kotlin.types.expressions.ExpressionTypingServices.getTypeInfo(ExpressionTypingServices.java:121)
+	at org.jetbrains.kotlin.types.expressions.ExpressionTypingServices.getTypeInfo(ExpressionTypingServices.java:96)
+	at org.javacs.kt.compiler.Compiler.compileKtExpression(Compiler.kt:343)
+	at org.javacs.kt.CompiledFile.bindingContextOf(CompiledFile.kt:49)
+	at org.javacs.kt.CompiledFile.referenceAtPoint(CompiledFile.kt:72)
+	at org.javacs.kt.hover.HoversKt.hoverAt(Hovers.kt:26)
+	at org.javacs.kt.KotlinTextDocumentService$hover$1.invoke(KotlinTextDocumentService.kt:98)
+	at org.javacs.kt.KotlinTextDocumentService$hover$1.invoke(KotlinTextDocumentService.kt:93)
+	at org.javacs.kt.util.AsyncExecutor.compute$lambda$2(AsyncExecutor.kt:19)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+----
+expression.kt
+val randoopJar = files("libs/randoop-all-4.3.4.jar") // adjust if different
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.149
+!MESSAGE [Error]		... 3 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.150
+!MESSAGE [Error]		at org.javacs.kt.KotlinTextDocumentService$hover$1.invoke(KotlinTextDocumentService.kt:98)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.151
+!MESSAGE [Error]		... 16 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.151
+!MESSAGE [Error]		at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorDispatcher.lambda$getTypeInfo$0(ExpressionTypingVisitorDispatcher.java:176)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.152
+!MESSAGE [Error]		at org.jetbrains.kotlin.psi.KtProperty.accept(KtProperty.java:58)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.152
+!MESSAGE [Error]		at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorForStatements.visitProperty(ExpressionTypingVisitorForStatements.java:71)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.153
+!MESSAGE [Error]		at org.jetbrains.kotlin.types.expressions.ExpressionTypingVisitorForStatements.visitProperty(ExpressionTypingVisitorForStatements.java:120)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.154
+!MESSAGE [Error]		at org.jetbrains.kotlin.resolve.LocalVariableResolver.process(LocalVariableResolver.kt:80)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.154
+!MESSAGE [Error]		at org.jetbrains.kotlin.resolve.LocalVariableResolver.resolveLocalVariableDescriptor(LocalVariableResolver.kt:188)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.155
+!MESSAGE [Error]	Caused by: java.lang.ClassCastException: class org.jetbrains.kotlin.resolve.lazy.descriptors.LazyPackageDescriptor cannot be cast to class org.jetbrains.kotlin.descriptors.ScriptDescriptor (org.jetbrains.kotlin.resolve.lazy.descriptors.LazyPackageDescriptor and org.jetbrains.kotlin.descriptors.ScriptDescriptor are in unnamed module of loader 'app')
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.155
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:151)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:246)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5884)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1656)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5099)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4540)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:413)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.157
+!MESSAGE [Error]		... 10 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-22 19:14:44.161
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:413)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:45.218
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 63:17
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:45.220
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 62:1-94:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:45.292
+!MESSAGE [Info]	async1    Hovering REFERENCE_EXPRESSION
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:45.293
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 62:1-94:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:45.295
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 62:1-94:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:45.696
+!MESSAGE [Info]	async1    Finished in 480 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:50.120
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 55:17
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:50.121
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 52:17-56:6
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:50.190
+!MESSAGE [Info]	async1    Hovering REFERENCE_EXPRESSION
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:50.191
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 52:17-56:6
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:50.193
+!MESSAGE [Info]	async1    Finished in 74 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:55.705
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 120:7
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:55.708
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 117:24-125:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:55.870
+!MESSAGE [Info]	async1    Hovering CALL_EXPRESSION
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:55.871
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 117:24-125:2
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:14:55.892
+!MESSAGE [Info]	async1    Finished in 189 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:15:15.494
+!MESSAGE [Info]	async1    Hovering at .../lib/build.gradle.kts 55:18
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:15:15.495
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 52:17-56:6
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:15:15.544
+!MESSAGE [Info]	async1    Hovering REFERENCE_EXPRESSION
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:15:15.545
+!MESSAGE [Info]	async1    Re-parsing build.gradle.kts 52:17-56:6
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:15:15.547
+!MESSAGE [Info]	async1    Finished in 54 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:21:05.785
+!MESSAGE [Info]	debounce0 Linting .../lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:21:07.244
+!MESSAGE [Info]	debounce0 No diagnostics in file:///home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:21:28.206
+!MESSAGE [Info]	debounce0 Linting .../lib/build.gradle.kts
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-22 19:21:28.207
+!MESSAGE [Info]	debounce0 No diagnostics in file:///home/noeliafc/Escritorio/eclipse/P1/SumaListasDigitos/lib/build.gradle.kts

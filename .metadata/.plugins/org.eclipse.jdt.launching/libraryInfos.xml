@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
     <libraryInfo home="/home/noeliafc/Descargas/eclipse_2025_09_pps_ubuntu/eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_21.0.8.v20250724-1412/jre" version="21.0.8"/>
-    <libraryInfo home="/usr/lib/jvm/java-17-openjdk-amd64" version="17.0.15"/>
-    <libraryInfo home="/usr/lib/jvm/java-8-openjdk-amd64" version="1.8.0_452">
+    <libraryInfo home="/usr/lib/jvm/java-17-openjdk-amd64" version="17.0.16"/>
+    <libraryInfo home="/usr/lib/jvm/java-8-openjdk-amd64" version="1.8.0_462">
         <bootpath>
             <entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar"/>
             <entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar"/>
@@ -21,7 +21,7 @@
             <entry path="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
         </endorsedDirs>
     </libraryInfo>
-    <libraryInfo home="/usr/lib/jvm/java-21-openjdk-amd64" version="21.0.7"/>
+    <libraryInfo home="/usr/lib/jvm/java-21-openjdk-amd64" version="21.0.8"/>
     <libraryInfo home="/home/noeliafc/Descargas/eclipse_2025_09_pps_ubuntu/eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_21.0.8.v20250724-1412" version="21.0.8">
         <bootpath>
             <entry path="null"/>
