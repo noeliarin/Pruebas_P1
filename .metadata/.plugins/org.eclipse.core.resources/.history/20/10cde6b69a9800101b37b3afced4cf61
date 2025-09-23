@@ -1,0 +1,102 @@
+package suma.listas.digitos;
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.assertThrows;
+import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * Pruebas JUnit 5 para la clase SumaListaDigitos.
+ */
+public class SumaListasDigitosTest {
+	
+	@Test
+	public void testBasico() {
+		
+		List<Integer> lista1 = Arrays.asList(1,2,3);
+		List<Integer> lista2 = Arrays.asList(4,5,6);
+		List<Integer> correcto = Arrays.asList(5,7,9);
+
+		List<Integer> resultado = SumaListasDigitos.sumaDosListasDeDigitos(lista1, lista2);
+		
+		assertEquals(correcto, resultado, "[1,2,3] + [4,5,6] = [5,7,9]");
+		
+	}
+	
+	 @Test
+	    public void testAcarreo() {
+	        List<Integer> lista1 = Arrays.asList(9, 9);
+	        List<Integer> lista2 = Arrays.asList(9, 9);
+	        List<Integer> correcto = Arrays.asList(1, 9, 8);
+
+	        List<Integer> resultado = SumaListasDigitos.sumaDosListasDeDigitos(lista1, lista2);
+
+	        assertEquals(correcto, resultado, "[9,9] + [9,9] = [1,9,8]");
+	    }
+	 
+	 @Test
+	    public void testLongitud() {
+	        List<Integer> lista1 = Arrays.asList(9, 9, 9);
+	        List<Integer> lista2 = Arrays.asList(1);
+	        List<Integer> correcto = Arrays.asList(1, 0, 0, 0);
+
+	        List<Integer> resultado = SumaListasDigitos.sumaDosListasDeDigitos(lista1, lista2);
+
+	        assertEquals(correcto, resultado, "[9,9,9] + [1] = [1,0,0,0]");
+	    }
+	 
+	 @Test
+	    public void testSumaVariasListas() {
+	        List<Integer> lista1 = Arrays.asList(9, 9, 9);
+	        List<Integer> lista2 = Arrays.asList(1);
+	        List<Integer> lista3 = Arrays.asList(0, 0, 1, 2);
+	        List<Integer> lista4 = Arrays.asList(4, 9);
+	        List<Integer> correcto = Arrays.asList(1, 0, 6, 1);
+
+	        List<Integer> resultado = SumaListasDigitos.sumaVariasListasDeDigitos(lista1, lista2, lista3, lista4);
+	        assertEquals(correcto, resultado, "[999] + [1] + [0012] + [49] = [1061]");
+	    }
+	 
+	 @Test
+	    public void testCerosIniciales() {
+	        List<Integer> lista1 = Arrays.asList(0, 0, 3);
+	        List<Integer> lista2 = Arrays.asList(0, 7);
+	        List<Integer> correcto = Arrays.asList(1, 0);
+
+	        List<Integer> resultado = SumaListasDigitos.sumaVariasListasDeDigitos(lista1, lista2);
+	        assertEquals(correcto, resultado, "[0,0,3] + [0,7] = [1,0]");
+	    }
+	 
+	 @Test
+	    public void testCasosInvalidos() {
+	        try {
+	            SumaListasDigitos.sumaDosListasDeDigitos(null, Arrays.asList(1,2,3));
+	            fail("Se esperaba IllegalArgumentException");
+	        } catch (IllegalArgumentException e) {
+	            // correcto
+	        }
+
+	        try {
+	            SumaListasDigitos.sumaDosListasDeDigitos(Arrays.asList(1,2,3), null);
+	            fail("Se esperaba IllegalArgumentException");
+	        } catch (IllegalArgumentException e) {
+	            // correcto
+	        }
+
+	        try {
+	            SumaListasDigitos.sumaDosListasDeDigitos(Arrays.asList(1,10,2), Arrays.asList(3,4));
+	            fail("Se esperaba IllegalArgumentException");
+	        } catch (IllegalArgumentException e) {
+	            // correcto
+	        }
+	    }
+    
+}

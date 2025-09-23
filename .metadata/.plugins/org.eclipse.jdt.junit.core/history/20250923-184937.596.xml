@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SumaListasDigitosTest" project="lib" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="suma.listas.digitos.SumaListasDigitosTest" time="0.018" displayname="SumaListasDigitosTest" uniqueid="[engine:junit-jupiter]/[class:suma.listas.digitos.SumaListasDigitosTest]">
+    <testcase name="testAcarreo" classname="suma.listas.digitos.SumaListasDigitosTest" time="0.004" displayname="testAcarreo()" uniqueid="[engine:junit-jupiter]/[class:suma.listas.digitos.SumaListasDigitosTest]/[method:testAcarreo()]"/>
+    <testcase name="testLongitud" classname="suma.listas.digitos.SumaListasDigitosTest" time="0.002" displayname="testLongitud()" uniqueid="[engine:junit-jupiter]/[class:suma.listas.digitos.SumaListasDigitosTest]/[method:testLongitud()]"/>
+    <testcase name="testSumaVariasListas" classname="suma.listas.digitos.SumaListasDigitosTest" time="0.002" displayname="testSumaVariasListas()" uniqueid="[engine:junit-jupiter]/[class:suma.listas.digitos.SumaListasDigitosTest]/[method:testSumaVariasListas()]"/>
+    <testcase name="testCasosInvalidos" classname="suma.listas.digitos.SumaListasDigitosTest" time="0.002" displayname="testCasosInvalidos()" uniqueid="[engine:junit-jupiter]/[class:suma.listas.digitos.SumaListasDigitosTest]/[method:testCasosInvalidos()]"/>
+    <testcase name="testCerosIniciales" classname="suma.listas.digitos.SumaListasDigitosTest" time="0.003" displayname="testCerosIniciales()" uniqueid="[engine:junit-jupiter]/[class:suma.listas.digitos.SumaListasDigitosTest]/[method:testCerosIniciales()]"/>
+    <testcase name="testBasico" classname="suma.listas.digitos.SumaListasDigitosTest" time="0.001" displayname="testBasico()" uniqueid="[engine:junit-jupiter]/[class:suma.listas.digitos.SumaListasDigitosTest]/[method:testBasico()]"/>
+  </testsuite>
+</testrun>

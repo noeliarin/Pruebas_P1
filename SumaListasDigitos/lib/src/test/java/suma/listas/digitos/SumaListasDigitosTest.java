@@ -76,22 +76,73 @@ public class SumaListasDigitosTest {
 	 
 	 @Test
 	 public void testCasosInvalidos() {
-	     try {
-	         SumaListasDigitos.sumaDosListasDeDigitos(null, Arrays.asList(1,2,3));
-	     } catch (IllegalArgumentException e) {
-	     }
+	     // sumaDosListasDeDigitos
+	     assertThrows(IllegalArgumentException.class, () ->
+	         SumaListasDigitos.sumaDosListasDeDigitos(null, Arrays.asList(1,2,3))
+	     );
 
-	     try {
-	         SumaListasDigitos.sumaDosListasDeDigitos(Arrays.asList(1,2,3), null);
-	     } catch (IllegalArgumentException e) {
-	     }
+	     assertThrows(IllegalArgumentException.class, () ->
+	         SumaListasDigitos.sumaDosListasDeDigitos(Arrays.asList(1,2,3), null)
+	     );
 
-	     try {
-	         SumaListasDigitos.sumaDosListasDeDigitos(Arrays.asList(1,10,2), Arrays.asList(3,4));
-	     } catch (IllegalArgumentException e) {
-	     }
+	     assertThrows(IllegalArgumentException.class, () ->
+	         SumaListasDigitos.sumaDosListasDeDigitos(Arrays.asList(1,10,2), Arrays.asList(3,4))
+	     );
+	     
+	     assertThrows(IllegalArgumentException.class, () ->
+	        SumaListasDigitos.sumaDosListasDeDigitos(Arrays.asList(1, -1, 2), Arrays.asList(3))
+	    );
 
+	    assertThrows(IllegalArgumentException.class, () ->
+	        SumaListasDigitos.sumaDosListasDeDigitos(Arrays.asList(1, null, 2), Arrays.asList(3))
+	    );
+
+	     assertThrows(IllegalArgumentException.class, () ->
+	         SumaListasDigitos.sumaVariasListasDeDigitos((List<Integer>[]) null)
+	     );
+
+	     assertThrows(IllegalArgumentException.class, () ->
+	         SumaListasDigitos.sumaVariasListasDeDigitos()
+	     );
+
+	     assertThrows(IllegalArgumentException.class, () ->
+	         SumaListasDigitos.sumaVariasListasDeDigitos(Arrays.asList(1,2,3), null)
+	     );
+	     
 	     
 	 }
+
+
+	 
+	 // Para el coverage 
+	 @Test
+	 public void testMain() {
+	     SumaListasDigitos.main(new String[]{});
+	 }
+	 
+	 @Test
+	 public void testSumaVariasListasCollection() {
+	     List<List<Integer>> listas = Arrays.asList(
+	         Arrays.asList(1, 2, 3),
+	         Arrays.asList(4, 5),
+	         Arrays.asList(0, 0, 6)
+	     );
+
+	     List<Integer> esperado = Arrays.asList(1, 7, 4);
+
+	     List<Integer> resultado = SumaListasDigitos.sumaVariasListasDeDigitos(listas);
+
+	     assertEquals(esperado, resultado, "[1,2,3] + [4,5] = [1,7,4]");
+	 }
+	 
+	 @Test
+	 public void testInstanciaClase() {
+	     new SumaListasDigitos();
+	 }
+	 
+	 
+
+
+
     
 }
